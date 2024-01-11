@@ -33,14 +33,15 @@ body {
 
 nav {
     background-color: #FFF;
-    overflow: hidden;
+}
+.navbar a{
+    font-size: 4px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 50px 0 0 300px;
+    margin: 50px 0 0 100px;
     padding: 0;
-    overflow: hidden;
 }
 
 nav li {
@@ -127,14 +128,16 @@ nav li:last-child a {
 }
 .texte_description{
     position: absolute;
-    bottom: 50px; /* Ajuste la position verticale */
-    right: 50%; /* Ajuste la position horizontale*/
-    padding: 20px;
+    bottom:270px; /* Ajuste la position verticale */
+    right: 40%; /* Ajuste la position horizontale*/
+    padding: 2px;
     border-radius: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
 
 }
+
+
 .button-contact{
     background-color: rgb(194, 10, 10);
     color: white;
@@ -168,6 +171,29 @@ nav li:last-child a {
     margin: 5px;
     border-radius: 5px 5px 5px 5px;
 }
+
+.fabrique{
+    color: #F3F3F3;
+    margin-left: 250px;
+    margin-top: -15vh;
+    width: 70%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ce0033;
+    opacity: 0.65;
+}
+.fabrique1,.fabrique2{
+    width: 25%;
+    margin-left: 100px;
+}
+
+.fabrique1{
+    border-right: #F3F3F3 solid 7px;
+}
+
 
 
 .point{
@@ -363,9 +389,9 @@ nav li:last-child a {
         border: white 1px solid;
         border-radius: 10px;
         padding-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 40px;
+        padding-left: 0px;
+        margin-left: 0px;
+        
     }
 
 .image{
@@ -837,24 +863,237 @@ a:hover {
     margin-top: 20px;
 }
 
+.recrutement {
+    margin-top: 60px;
+    margin-left: 00px;
+    width: 600px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.recrutement .partie-1 {
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.recrutement .partie-1 button{
+    margin-left: 190px;
+    color: #F3F3F3;
+}
+.recrutement .partie-2 button{
+    color: #F3F3F3;
+}
+.partie-1 img {
+    background-color: #8e1919;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.offre {
+    display: flex;
+}
+
+form {
+    display: grid;
+    margin-right: 100px;
+    grid-template-columns: 6fr;
+}
+
+.form1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form1 input {
+    width: 250px;
+    height: 80px;
+    padding-left: 1;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.form2 input {
+    width: 250px;
+    height: 80px;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.iconify-icon {
+    color: #ce0033;
+    margin-left: 300px;
+}
+
+.partie-1 h1 {
+    font-size: 30px;
+    border-top: 3px solid #ce0033;
+    border-bottom: 3px solid #ce0033;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partie-1 h3 {
+    display: flex;
+    justify-content: right;
+    font-size: 25px !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px !important;
+}
+.offre-info{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.recrutement h1{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.offre-info h2 {
+    text-align: left;
+    border-bottom: 1px solid #ce0033;
+    font-size: 40px;
+    color: #ce0033;
+}
+
+.offre-info p {
+    font-size: 20px;
+}
+
+.offre-info h4 {
+    color: #ce0033;
+    font-size: 20px;
+}
+.recrutement .partie-1{
+    background: #f4efef;
+}
+.partie-1 button {
+    margin-top: 30px;
+    margin-left: 50%;
+    color: #F3F3F3 ;
+    font-size: 20px;
+    background-color: #ce0033;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+}
+
+.offre-details {
+    border-radius: 10%;
+    position: absolute;
+    background: #FAFAFA;
+    width: 15%;
+    height:25%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    margin: right 0;
+    margin-left: 350px;
+}
+
+.offre-details iconify-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -16px;
+    font-size: 16px;
+}
+
+.partie-2 h1 {
+
+    margin-top: 50px;
+    font-size: 30px;
+    color: #ce0033;
+}
+
+.partie-2 {
+    margin-left: 50px;
+}
+
+.fichier {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ce0033;
+}
+
+.partie-2 p {
+    width: 500px;
+    height: 500px;
+    font-size: 18px;
+}
+
+.message textarea {
+    width: 540px;
+    height: 200px;
+    margin-left: 20px;
+    border: solid gray 3px;
+    margin-top: 20px;
+}
+
+.accord {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    display: flex;
+    margin-left: 20px;
+}
+
 
 @media only screen and (max-width: 1024px) {
     /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
    /* Styles généraux */
 
+ 
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
+    border: #212020 solid   2vh;
+    overflow-x: hidden;
+
 }
 
 /* Section 1 - Barre de navigation */
 
 .section1 {
+    background-color: #ce0033;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
     align-items: center;
     padding: 10px;
+}
+
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
 }
 
 .logo img {
@@ -889,8 +1128,7 @@ nav li {
     position: absolute;
     top: 20px;
     bottom: 50px;
-    right: 50px;
-    left: 50px;
+    left: 100px;
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -898,15 +1136,42 @@ nav li {
     /* background: rgba(0, 0, 0, 0.5); */
 }
 
-.button-passage {
-    text-align: center;
-    padding-top: 150px;
+.fabrique{
+    color: #F3F3F3;
+    margin-left: 70px;
+    margin-top: -15vh;
+    width: 70%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ce0033;
+    opacity: 0.65;
+}
+.fabrique1,.fabrique2{
+    width: 75%;
+    margin-left: 10px;
 }
 
-.button-rond,
-.button-rectangle {
-    margin: 5px;
+.fabrique1{
+    border-right: none;
+    border-bottom: #F3F3F3 solid 7px;
 }
+
+.fabrique h1{
+    font-size: 40px;
+}
+
+/* rafetal */
+
+.rafetal{
+    display: none;
+}
+
+
+/* ^ùm */
 
 /* Petite histoire section */
 
@@ -992,6 +1257,8 @@ nav li {
 }
 .Formateur {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .formateur{
@@ -1028,12 +1295,19 @@ nav li {
 }
 
 .div-un,.valeur{
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: 20px;
 }
+
+.div-un {
+    width: 60%;
+ 
+}
 .div-deux{
-    margin-right: 10vh;
+    width: 100%;
+    margin-right: 15vh;
+  
 }
 
 .div-un, .div-deux {
@@ -1056,10 +1330,11 @@ nav li {
 
 .numbers{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-image: url("Images/fabrique/Sans\ titre-1.png");
-    height: 200px;
+    height: auto;
 }
 .headequipe1{
     text-align: center;
@@ -1067,7 +1342,7 @@ nav li {
 .numbers p {
     margin-top: 70px;
     color: #FAFAFA;
-    font-size: 17px;
+    font-size: 20px;
 }
 .valeurs h1{
 align-items: center;}
@@ -1088,6 +1363,7 @@ align-items: center;}
 
 .partenaires1{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 80px;
@@ -1096,7 +1372,7 @@ align-items: center;}
 }
 
 .partenaires1 img{
-    width: 80px;
+    width: 100px;
     height: 100px;
     margin-right: 80px;
 }
@@ -1104,10 +1380,242 @@ align-items: center;}
     margin-top: 20px;
 }
 
+/* candidatures */
 
-/* témoignages */
+.bord{
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+.lettre {
+    display: block;
+    width: 200px;
+    padding: 1px;
+}
+
+.partie1,.partie2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Recrutement */
+
+.recrutement {
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+/* .offre {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+} */
+
+/* .offre-info,
+.offre-details { */
+    /* padding: 10px; Ajustez selon vos besoins */
+/* } */
 
 
+.recrutement .partie-1 {
+    width: 360px;
+    border-radius: 20px;
+    margin-left: 2px;
+}
+.recrutement .partie-1 button{
+    margin-left: 190px;
+    color: #F3F3F3;
+}
+.recrutement .partie-2 button{
+    color: #F3F3F3;
+}
+.partie-1 img {
+    background-color: #8e1919;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+form {
+    display: grid;
+    margin-right: 100px;
+    grid-template-columns: 6fr;
+}
+
+.form1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form1 input {
+    width: 300px;
+    height: 80px;
+    padding-left: 1;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.form2 input {
+    width: 250px;
+    height: 80px;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.iconify-icon {
+    color: #ce0033;
+    margin-left: 300px;
+}
+
+.partie-1 h1 {
+    font-size: 30px;
+    border-top: 3px solid #ce0033;
+    border-bottom: 3px solid #ce0033;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partie-1 h3 {
+    display: flex;
+    justify-content: right;
+    font-size: 25px !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px !important;
+}
+.offre-info{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.recrutement h1{
+    margin-left: 25px;
+    /* margin-right: 25px; */
+}
+.offre-info h2 {
+    text-align: left;
+    border-bottom: 1px solid #ce0033;
+    font-size: 40px;
+    color: #ce0033;
+}
+
+.offre-info p {
+    font-size: 20px;
+}
+
+.offre-info h4 {
+    color: #ce0033;
+    font-size: 20px;
+}
+.recrutement .partie-1{
+    background: #f4efef;
+}
+.partie-1 button {
+    margin-top: 30px;
+    margin-left: 50%;
+    color: #F3F3F3 ;
+    font-size: 20px;
+    background-color: #ce0033;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+}
+
+.offre-details {
+    border-radius: 10%;
+    /* position: absolute; */
+    background: #FAFAFA;
+    /* width: 15%;
+    height:25%; */
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    margin: right 0;
+    margin-left: 300px;
+}
+
+.offre-details iconify-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -16px;
+    font-size: 16px;
+}
+
+.partie-2 h1 {
+
+    margin-top: 50px;
+    font-size: 30px;
+    color: #ce0033;
+}
+
+.partie-2 {
+    margin-left: 10px;
+}
+
+.fichier {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ce0033;
+}
+
+.partie-2 p {
+    width: 500px;
+    height: 500px;
+    font-size: 18px;
+}
+
+.message textarea {
+    width: 240px;
+    height: 200px;
+    margin-left: 10px;
+    border: solid gray 3px;
+    margin-top: 20px;
+}
+
+.accord {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    display: flex;
+    margin-left: 20px;
+}
 
 /* Footer */
 
@@ -1164,4 +1672,18 @@ footer {
     color: #fff;
 }
 
-    }
+
+
+
+
+
+    
+}
+
+/* témoignages */
+
+
+
+
+
+    
